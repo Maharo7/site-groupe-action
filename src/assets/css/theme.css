@@ -1387,12 +1387,12 @@ a.fg-light:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(109, 114, 139, 0.75);
+    color: rgb(148, 151, 167);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-    color: #6D728B;
+    color: #ffffff;
 }
 
 .navbar-light .navbar-nav .show>.nav-link,
@@ -1686,7 +1686,7 @@ a.fg-light:focus {
 .top-bar {
     display: block;
     height: 35px;
-    border-bottom: 1px solid #f0f1f6;
+    border-bottom: 1px solid #63728b;
     font-size: 14px;
 }
 
@@ -1851,7 +1851,7 @@ a.fg-light:focus {
 .page-section {
     position: relative;
     display: block;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .page-section p {
@@ -2099,6 +2099,10 @@ a.fg-light:focus {
 
 .card-blog-row *:first-child .card-blog {
     background-color: #2F89FC;
+}
+
+.card-blog-row *:nth-child(3) .card-blog {
+    background-color: #121312;
 }
 
 .card-blog-row *:first-child .card-blog .post-author,
@@ -2364,6 +2368,12 @@ a.fg-light:focus {
     margin-bottom: 24px;
 }
 
+@media (max-width: 767px) {
+    .filterable-btn {
+        display: grid !important;
+    }
+}
+
 .filterable-btn .btn {
     margin: 4px;
     padding: 8px 16px;
@@ -2381,6 +2391,7 @@ a.fg-light:focus {
     padding: 16px;
     width: 33.33333%;
     float: left;
+    height: 400px;
 }
 
 .form-contact .form-control {
@@ -2414,7 +2425,7 @@ a.fg-light:focus {
     display: block;
     padding-top: 80px;
     padding-bottom: 20px;
-    background-color: #33374B;
+    background-color: #242424;
     color: #fff;
 }
 
@@ -2524,3 +2535,410 @@ a.fg-light:focus {
 
 
 /*# sourceMappingURL=theme.css.map */
+
+
+/* MY MODIF*/
+
+.logo-accueil {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 426px) {
+    .teamAccueil {
+        margin-left: 15%;
+    }
+}
+
+.descriAccueil {
+    color: #fff !important;
+}
+
+.text-accueil {
+    justify-content: center;
+    height: 140px;
+    align-items: center;
+    display: flex;
+}
+
+.theme-realisation {
+    height: 200px;
+    background-image: none;
+    background-color: white;
+}
+
+.theme-realisation:hover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.theme-one:hover {
+    background-image: url(../img/themes/immobilier.jpg) !important;
+}
+
+.theme-two:hover {
+    background-image: url(../img/themes/distribution.jpg) !important;
+}
+
+.theme-three:hover {
+    background-image: url(../img/themes/tourisme.jpg) !important;
+}
+
+.theme-four:hover {
+    background-image: url(../img/themes/hotellerie.jpg) !important;
+}
+
+.theme-five:hover {
+    background-image: url(../img/themes/btp.jpg) !important;
+}
+
+.theme-six:hover {
+    background-image: url(../img/themes/transport.jpg) !important;
+}
+
+.theme-realisation:hover h5 {
+    color: white;
+    z-index: 5;
+}
+
+.page-banner.overlay-dark-two:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 188, 197, 0.57);
+    z-index: -1;
+}
+
+.distribution {
+    height: 250px;
+}
+
+.projects {
+    width: 300px;
+    height: 200px;
+}
+
+.nav-menu:hover {
+    cursor: pointer;
+}
+
+.grid-project {
+    display: block;
+    overflow: auto;
+}
+
+.engagements {
+    margin-left: 10%;
+    font-size: 1.25rem;
+}
+
+.engagements-line {
+    width: 50%;
+}
+
+.img-info {
+    float: left;
+    height: 15vw !important;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.action-info {
+    height: 500px;
+}
+
+@media (max-width: 767px) {
+    .grid-project {
+        display: grid !important;
+    }
+    .grid-item {
+        width: auto !important;
+        height: auto;
+    }
+    .projects {
+        width: auto !important;
+        height: auto !important;
+    }
+    .engagements {
+        margin-left: 0px !important;
+    }
+    .engagements-line {
+        width: auto;
+    }
+    .action-info {
+        height: 415px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-info {
+        height: 50vw !important;
+    }
+    .margin_bott {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media (max-width: 868px) and (min-width: 680px) {
+    .action-info {
+        height: 600px !important;
+    }
+}
+
+
+/*
+@media (min-width: 1279px) {
+    .chiffre1 {
+        padding-left: 100px;
+    }
+    .chiffre2 {
+        padding-right: 100px;
+    }
+    .chiffre3 {
+        padding-left: 100px;
+    }
+    .chiffre4 {
+        padding-right: 100px;
+    }
+}
+
+
+ .accueil-page .title-section {
+    color: white;
+}
+*/
+
+.about-img-accueil {
+    position: relative;
+    margin: 15px auto;
+    width: auto;
+    max-width: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-img-accueil img {
+    width: 100%;
+}
+
+.dark-background {
+    background: #242424;
+}
+
+.title-section-accueil {
+    font-size: 2.35rem;
+    color: #33374B;
+}
+
+.activity-accueil {
+    font-size: 0.90rem;
+}
+
+.text-dark {
+    margin: 0;
+}
+
+.icon-accueil {
+    margin-right: 15px;
+}
+
+.icon-filiale {
+    margin-right: 15px;
+    border-style: double;
+    border-width: 5px;
+}
+
+.iconmaka {
+    border-style: none !important;
+}
+
+.activity-accueil .process {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.accueil-banner {
+    height: 450px !important;
+}
+
+.maine_box {
+    position: relative;
+    overflow: hidden;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.maine_box .items_picher img {
+    width: 100%;
+}
+
+.box_detail {
+    width: 100%;
+    background: rgba(34, 34, 34, 0.69);
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    z-index: 9;
+    bottom: 0;
+    transition: all 0.3s;
+    padding: 13px 15px 15px;
+    max-height: 69px;
+}
+
+.use_detail {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    top: -30px;
+}
+
+.use_detail .event_detail {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.use_detail .event_detail {
+    display: inline-block;
+    position: relative;
+}
+
+.detail_logo {
+    display: flex;
+    /* align-items: stretch; */
+    justify-content: space-between;
+    /* flex-direction: row; */
+    margin-bottom: 15px;
+}
+
+.detail_logo_img {
+    width: 100px;
+    /*margin-top: -35px; */
+}
+
+.detail_logo_img img {
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.box_detail:hover {
+    /*transform: translate(0px, -5px);*/
+    height: 150px;
+    max-height: 150px !important;
+}
+
+.icon-accueil:hover {
+    transform: translate(0px, -15px);
+    box-shadow: 0px 20px 15px -20px #898da2;
+    transition: all 0.6s ease 0s;
+}
+
+
+/*
+.icon-filiale:hover {
+    transform: translate(0px, -15px);
+    box-shadow: 0px 20px 15px -20px #898da2;
+    transition: all 0.6s ease 0s;
+} */
+
+.icon_chiffre:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition: all 0.8s ease 0s;
+}
+
+.datail_show p {
+    font-size: 0.9rem;
+}
+
+#domaines_expertise {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.filiales_accueil_text {
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.bienvenue_text {
+    font-size: 50px;
+}
+
+@media (max-width: 1024px) {
+    .filiales_accueil_text {
+        font-size: 1.95rem;
+    }
+    .bienvenue_text {
+        font-size: 40px;
+    }
+    .title-section-accueil {
+        font-size: 1.75rem;
+    }
+}
+
+.zoom-in-out-box:hover {
+    animation: zoom-in-zoom-out 0.7s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.right-txt p {
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.filiales-logo {
+    width: 200px;
+    background: white;
+    border-radius: 100px;
+}
+
+.filiales-desc {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .filiales-location {
+        margin-top: 50px;
+    }
+}
+
+.filiales-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}

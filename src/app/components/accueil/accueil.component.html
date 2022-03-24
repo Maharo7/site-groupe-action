@@ -1,195 +1,365 @@
-<div class="page-banner home-banner mb-5">
-    <div class="slider-wrapper">
-        <div class="owl-carousel hero-carousel">
-            <div class="hero-carousel-item">
-                <img src="../../assets/img/bg_image_1.jpg" alt="image Triodi">
-                <div class="img-caption">
-                    <div class="subhead">"Slogan ou phrase percutante Triodi"</div>
-                    <h1 class="mb-4">TRIODI</h1>
-                    <a (click)="goTriodi()" class="btn btn-outline-light">Voir plus</a>
-                </div>
-            </div>
-            <div class="hero-carousel-item">
-                <img src="../../assets/img/bg_image_2.jpg" alt="image Triodi">
-                <div class="img-caption">
-                    <h1 class="mb-4">MAKA</h1>
-                    <a (click)="goMaka()" class="btn btn-outline-light">Voir plus</a>
-                    <div class="subhead">"Slogan ou phrase percutante Maka"</div>
-                </div>
-            </div>
-            <div class="hero-carousel-item">
-                <img src="../../assets/img/bg_image_3.jpg" alt="image Triodi">
-                <div class="img-caption">
-                    <div class="subhead">"Slogan ou phrase percutante Matura"</div>
-                    <h1 class="mb-4">MATURA </h1>
-                    <a (click)="goMatura()" class="btn btn-primary">Voir plus</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- .slider-wrapper -->
-</div>
-<!-- .page-banner -->
-
-
 <main>
-    <div class="page-section">
-        <div class="container">
+    <div class="page-section accueil-page ">
+        <div class="container-fluid" style="padding-bottom: 25px;">
+
+            <div class="text-center" style="padding-bottom: 15px;">
+                <h2 class="bienvenue_text"><i>Bienvenue sur le site web du <span class="fg-primary"> GROUPE ACTION</span> </i> </h2>
+
+            </div>
             <div class="row align-items-center">
+                <div class="col-lg-1"></div>
                 <div class="col-lg-6 py-3">
-                    <div class="subhead"> A propos du groupe Actions</div>
-                    <h2 class="title-section">Qui sommes- <span class="fg-primary">nous ?</span></h2>
+                    <!--
+ <div class="col-lg-6 py-3" style="border-style: outset;
+                border-color:#2f89fc;
+                border-width: 7px;">
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia lacus eu nunc volutpat porta. Nam efficitur bibendum magna, eget sagittis urna vehicula molestie. Morbi tincidunt nisi ac ante cursus interdum. Ut in neque faucibus, lobortis nunc
-                        sed, finibus felis. Quisque ut sagittis nibh.
-                    </p>
+                -->
 
+                    <h4 class="title-section-accueil zoom-in-out-box" style="margin-bottom: 25px;">Les principales <span class="fg-primary">  activités </span> groupe</h4>
 
-                </div>
-                <div class="col-lg-6 py-3">
-                    <div class="about-img">
-                        <img src="../assets/img/about.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- .page-section -->
-    <div class="page-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 py-3">
-                    <div class="about-img">
-                        <img src="../assets/img/ppn.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 py-3">
-                    <div class="subhead"> Logo Triodi</div>
-                    <h2 class="title-section">TRIODI</h2>
+                    <div class="activity-accueil">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/btp2.png" alt="icon-btp2">
+                                </div>
+                                <div class=" float-right">
+                                    <p class="text-dark">
+                                        Conception,Construction, BTP </p>
+                                    <p class="text-dark">
+                                        Gestion des infrastructures </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/transport.png" alt="icon-btp">
+                                </div>
+                                <div class=" float-right">
+                                    <p class="text-dark">
+                                        Transport </p>
+                                    <p class="text-dark">
+                                        Transformation industrielles de déchets </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/wrench.png" alt="icon-btp">
+                                </div>
+                                <div class=" float-right">
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia lacus eu nunc volutpat porta. Nam efficitur bibendum magna, eget sagittis urna vehicula molestie. Morbi tincidunt nisi ac ante cursus interdum. Ut in neque faucibus, lobortis nunc
-                        sed, finibus felis. Quisque ut sagittis nibh.
-                    </p>
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="page-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 py-3">
-                    <div class="subhead"> Logo Maka</div>
-                    <h2 class="title-section">MAKA</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia lacus eu nunc volutpat porta. Nam efficitur bibendum magna, eget sagittis urna vehicula molestie. Morbi tincidunt nisi ac ante cursus interdum. Ut in neque faucibus, lobortis nunc
-                        sed, finibus felis. Quisque ut sagittis nibh.
-                    </p>
-
-
-                </div>
-                <div class="col-lg-6 py-3">
-                    <div class="about-img">
-                        <img src="../assets/img/entreprise.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="page-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 py-3">
-                    <div class="about-img">
-                        <img src="../assets/img/nature.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 py-3">
-                    <div class="subhead"> Logo Matura</div>
-                    <h2 class="title-section">MATURA</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia lacus eu nunc volutpat porta. Nam efficitur bibendum magna, eget sagittis urna vehicula molestie. Morbi tincidunt nisi ac ante cursus interdum. Ut in neque faucibus, lobortis nunc
-                        sed, finibus felis. Quisque ut sagittis nibh.
-                    </p>
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- .page-section -->
-
-    <div class="page-section">
-        <div class="container">
-            <div class="text-center">
-
-                <h2 class="title-section">Mot du président</h2>
-            </div>
-
-            <div class="owl-carousel team-carousel ">
-
-                <div class="englobe">
-                    <div class="team-wrap">
-                        <div class="team-profile">
-                            <img src="../assets/img/teams/team_1.jpg" alt="">
+                                    <p class="text-dark">
+                                        Digitalisation </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-content">
-                            <h5>Nom du président</h5>
-                            <div class="text-sm fg-grey">Informations sur le président</div>
 
-                            <div class="social-button">
-                                <a href="#"><span class="mai-logo-facebook-messenger"></span></a>
-                                <a href="#"><span class="mai-call"></span></a>
-                                <a href="#"><span class="mai-mail"></span></a>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/btp.png" alt="icon-btp">
+                                </div>
+                                <div class=" float-right">
+                                    <p class="text-dark">
+                                        Location de véhicules (non touristiques) et engins </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/event.png" alt="icon-btp">
+                                </div>
+                                <div class=" float-right">
+                                    <p class="text-dark">
+                                        Organisation évènementielle et manifestations </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 d-flex align-items-center process mb-40 ">
+                                <div class="icon-lf float-left hvr-float-shadow">
+                                    <img class="icon-accueil" src="../assets/img/icons/basket.png" alt="icon-btp">
+                                </div>
+                                <div class=" float-right">
+                                    <p class="text-dark">
+                                        Commercialisation et distribution </p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-12" style="margin-left: 10%; margin-top: 12%;">
+                    <!--
+                <ul style="list-style-type:disc ;color: #525252; ">
+                        <li>Conception, construction et gestion des infrastructures et BTP</li>
+                        <li>Transport et transformation industrielles de déchets</li>
+                        <li>Digitalisation et commercialisation des supports et pièces de transaction</li>
+                        <li>Location de véhicules (non touristiques) et engins </li>
+                        <li>Organisation évènementielle et manifestations </li>
+                        <li>Commercialisation et distribution de PPN, de marchandises générales, de matériaux de construction, d’électroménagers et de matériels informatiques et électroniques</li>
+                    </ul>
+                -->
 
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia lacus eu nunc volutpat porta. Nam efficitur bibendum magna, eget sagittis urna vehicula molestie. Morbi tincidunt nisi ac ante cursus interdum. Ut in neque faucibus, lobortis nunc
-                            sed, finibus felis. Quisque ut sagittis nibh. Pellentesque iaculis mauris eget felis pellentesque, ut scelerisque dolor congue. Proin a tincidunt elit, ac molestie dui. Ut lacinia dui turpis, vel viverra tellus accumsan nec.
-                            Duis hendrerit velit sit amet porttitor volutpat.
-                        </p>
 
-
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="about-img-accueil">
+                        <img src="../assets/img/innovation.jpg" alt="image innovation">
                     </div>
                 </div>
-
-
             </div>
         </div>
-        <!-- .container -->
     </div>
     <!-- .page-section -->
 
 
+    <!-- .page-section
+    <div class="page-section dark-background">
+        <div class="container">
+            <div class="text-center">
+                <div class="subhead">Quelques infos</div>
+                <h4 class="title-section"> A propos du groupe Action</h4>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="card-testimonial action-info">
+                    <img class="img-info" src="../assets/img/madagascar.jpg" alt="">
+                    <div class="entry-footer" style="margin-top: 10px;">
+                        <div class="post-author">
+                            <h5>Zones d'intervention :</h5>
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        Tout le territoire de Madagascar.
+                    </div>
+
+                </div>
+
+                <div class="card-testimonial action-info">
+                    <img class="img-info" src="../assets/img/about.jpg" alt="">
+                    <div class="entry-footer" style="margin-top: 10px;">
+                        <div class="post-author">
+                            <h5>Chiffres clés :</h5>
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        La Société GROUPE ACTION compte actuellement 65 employés dont 15 employés permanents et 50 employés temporaires.
+                    </div>
+
+                </div>
+
+                <div class="card-testimonial action-info">
+                    <img class="img-info" src="../assets/img/qg.jpg" alt="">
+                    <div class="entry-footer" style="margin-top: 10px;">
+                        <div class="post-author">
+                            <h5>Partenaires :</h5>
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        - Les entreprises <br> - Les particuliers <br> - Les collectivités décentralisées <br> - …
+                    </div>
+
+                </div>
+            </div>
+             .row 
+        </div>
+      
+    </div>  -->
     <!-- .page-section -->
 
-    <!-- Testimonials -->
+    <!-- nos Filiales -->
 
-    <!-- .page-section -->
+    <section id="domaines_expertise" class="padding ptb-xs-40 dark-background">
+        <div class="container-fluid">
+            <div class="row text-center mb-30">
+                <div class="col-sm-12">
+                    <div class="sec_hedding">
+
+                        <h2 class="text-white filiales_accueil_text">Nos <span class="fg-primary">  filiales </span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-md-4 mb-xs-30 margin_bott">
+                            <div class="maine_box">
+                                <div class="items_picher">
+                                    <img src="../assets/img/accueil/triodi.png" alt="triodiBackground">
+                                </div>
+
+                                <div class="box_detail">
+                                    <a class="filiales-link" href="/filiales#TRIODI">
+                                        <div class="datail_show">
+                                            <div class="detail_logo">
+
+                                                <h3>TRIODI</h3>
+
+                                                <div class="detail_logo_img">
+                                                    <img src="../assets/img/triodi/triodi.png" style="width: 100px;" alt="logoTriodi">
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                Commercialisation de marchandises générales, Importation véhicules, Transport et transformation de déchets, Digitalisation de pièces de transaction &amp; mécaniques </p>
+                                            <!--<a href="#">plus</a>-->
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-md-4 mb-xs-30 margin_bott">
+                            <div class="maine_box">
+                                <div class="items_picher">
+                                    <img src="../assets/img/accueil/maka.png" alt="makaBackground">
+                                </div>
+
+                                <div class="box_detail">
+                                    <a class="filiales-link" href="/filiales#MAKA">
+                                        <div class="datail_show">
+                                            <div class="detail_logo">
+
+                                                <h3>MAKA</h3>
+
+                                                <div class="detail_logo_img">
+                                                    <img src="../assets/img/maka/maka.png" style="width: 120px; margin-left: -20px;" alt="logomaka">
+                                                </div>
+                                            </div>
+
+                                            <p> Achat et vente de biens immobiliers industriels <br> Location d’entrepôts, de terrains et d’autres biens immobiliers</p>
+
+                                            <!--<a href="#">plus</a>-->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-md-4 mb-xs-30 margin_bott">
+                            <div class="maine_box">
+                                <div class="items_picher">
+                                    <img src="../assets/img/accueil/matura.png" alt="maturaBackground">
+                                </div>
+
+                                <div class="box_detail">
+                                    <a class="filiales-link" href="/filiales#MATURA">
+                                        <div class="datail_show">
+                                            <div class="detail_logo">
+
+                                                <h3>MATURA</h3>
+
+                                                <div class="detail_logo_img">
+                                                    <img src="../assets/img/matura/matura.png" style="width: 100px;" alt="logoTriodi">
+                                                </div>
+                                            </div>
+
+                                            <p> Achat et vente de biens immobiliers industriels <br> Location d’entrepôts, de terrains et d’autres biens immobiliers</p>
+                                            <!--<a href="#">plus</a>-->
+                                        </div>
+                                    </a>>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin nos filiales-->
 
 
-    <!-- .page-section -->
+
+    <!--  Quelques Chiffres -->
+
+    <div class="page-section">
+        <div class="container-fluid">
+            <div class="text-center">
+
+                <h4 class="filiales_accueil_text">Quelques <span class="fg-primary">chiffres </span> du groupe</h4>
+            </div>
+
+            <div class="row justify-content-center">
+
+
+                <div class="col-md-6 col-lg-4 col-xl-4 py-3 mb-3 chiffre1">
+                    <div class="text-center">
+                        <div class="img-fluid mb-4">
+                            <img class="icon_chiffre" src="../assets/img/icons/money.png" alt="icon_chiffre">
+                        </div>
+                        <h5>+ de <span class="fg-primary" style="font-size: 35px;">  {{chiffreAffaire}} </span> Millions MGA <br> de chiffre d’affaires</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 py-3 mb-3 chiffre2">
+                    <div class="text-center">
+                        <div class="img-fluid mb-4 ">
+                            <img class="icon_chiffre" src="../assets/img/icons/handshake.png" alt="icon_chiffre">
+                        </div>
+                        <h5>+ de <span class="fg-primary" style="font-size: 35px;">{{partenaires}} </span> partenaires <br> et fournisseurs</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-4 py-3 mb-3 chiffre3">
+                    <div class="text-center">
+                        <div class="img-fluid mb-4 ">
+                            <img class="icon_chiffre" src="../assets/img/icons/home.png" alt="icon_chiffre">
+                        </div>
+                        <h5>+ de <span class="fg-primary" style="font-size: 35px;">{{immeubles}} </span> immeubles en locations</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-4 py-3 mb-3 chiffre4">
+                    <div class="text-center">
+                        <div class="img-fluid mb-4 ">
+                            <img class="icon_chiffre" src="../assets/img/icons/people.png" alt="icon_chiffre">
+                        </div>
+                        <h5>+ de <span class="fg-primary" style="font-size: 35px;">{{collaborateurs}} </span> collaborateurs</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 py-3 mb-3 chiffre4">
+                    <div class="text-center">
+                        <div class="img-fluid mb-4 ">
+                            <img class="icon_chiffre" src="../assets/img/icons/terrain.png" alt="icon_chiffre">
+                        </div>
+                        <h5>+ de <span class="fg-primary" style="font-size: 35px;">{{terrain}} </span> mille m² en terrain</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- .container -->
+    </div>
+
+    <!--/Fin Quelques Chiffres-->
+
+    <!--Engagements-->
+
+    <div class="page-banner accueil-banner bg-img bg-img-parallax overlay-dark" style="background-image: url(../assets/img/camions1.jpg);">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-lg-12">
+                    <h1 class="fg-white text-center">NOS ENGAGEMENTS</h1>
+
+                    <hr class="engagements-line" style="height:2px;border-width:0;color:gray;background-color:#a2bae1">
+
+                    <ul class="engagements" style="list-style-type:disc ;color: #fff;line-height:225%;">
+                        <li>Offrir à nos clients des produits et services de qualité et au meilleur prix</li>
+                        <li>Contribuer à la protection de l’environnement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="page-section">
         <div class="container">
             <div class="text-center">
-                <h2 class="title-section mb-3">Contactez-nous</h2>
-                <p>Ou envoyer un mail à : <a href="mailto:example@mail.com">example@mail.com</a></p>
+                <h4 class="title-section mb-3">Contactez-nous</h4>
+                <p>Ou envoyer un mail à : <a href="mailto:dir2groupeaction@gmail.com">dir2groupeaction@gmail.com</a></p>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-8">
@@ -222,6 +392,8 @@
         <!-- .container -->
     </div>
     <!-- .page-section -->
+
+
 
 
     <!-- .page-section -->

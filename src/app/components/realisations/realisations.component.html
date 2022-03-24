@@ -1,0 +1,235 @@
+<main>
+    <div class="page-section" style="padding-bottom: 0px !important;">
+        <div class="container">
+            <div class="text-center">
+                <div class="subhead">Nos réalisations</div>
+            </div>
+            <div class="filterable-btn">
+                <!--   <button (click)="showAll()" class="btn" [class.active]="tagsAll" data-filter="*">Tous</button> -->
+                <button (click)="showImmobilier()" class="btn" [class.active]="tagsImmobilier" data-filter=".web">Immobilier et Commerce</button>
+                <button (click)="showDistribution()" class="btn" [class.active]="tagsDistribution" data-filter=".mobile">Distribution et Transformation</button>
+                <button (click)="showTourisme()" class="btn" [class.active]="tagsTourisme" data-filter=".desktop">Tourisme</button>
+                <button (click)="showHotellerie()" class="btn" [class.active]="tagsHotellerie" data-filter=".desktop">Hôtellerie et Restauration</button>
+                <button (click)="showBTP()" class="btn" [class.active]="tagsBTP" data-filter=".desktop">BTP</button>
+                <button (click)="showtransport()" class="btn" [class.active]="tagsTransport" data-filter=".desktop">Transport</button>
+            </div>
+
+            <div class="grid mt-3 grid-project">
+
+                <!-- Immobilier -->
+                <div class="grid-item mobile" *ngIf="tagsImmobilier">
+                    <p>
+                        Réalisations sur l"immobilier et le commerce en cours
+                    </p>
+                </div>
+
+                <!-- Fin Immobilier -->
+
+                <!-- Collecte et distribution -->
+                <div class="grid-item mobile" *ngIf="tagsDistribution">
+                    <h6>Collecte et distribution </h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/collecte-distribution.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/collecte-distribution.jpg" alt="collecte">
+                        </a>
+                    </div>
+                    <p>
+                        Collecte et distribution en matière de Riz, la société travaille avec des rizeries d’Ambatondrazaka pour écouler leur production
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsDistribution">
+                    <h6>Distribution de PPN</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/ppn.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/ppn.jpg" alt="ppn">
+                        </a>
+                    </div>
+                    <p>
+                        Vente en gros de savon en poudre, lait en poudre, des matériaux de construction comme les carreaux, peintures, bois et planche de construction,
+                    </p>
+                </div>
+                <div class="grid-item web desktop" *ngIf="tagsDistribution">
+                    <h6>Distribution d’huile</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/huile.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/huile.jpg" alt="huile">
+                        </a>
+                    </div>
+                    <p>
+                        Distribution d’huile dans les régions de Menabe, Antsiranana, Sofia, Diana, Sava
+                    </p>
+                </div>
+                <div class="grid-item web" *ngIf="tagsDistribution">
+                    <h6>Distribution de matériaux de construction</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/materiaux.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/materiaux.jpg" alt="materiaux">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsDistribution">
+                    <h6>Distribution de vivres pendant les crises sanitaires</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/vivres.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/vivres.jpg" alt="vivres">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsDistribution">
+                    <h6>Demandes de cotation</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/distribution/demandes.jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/distribution/demandes.jpg" alt="demandes">
+                        </a>
+                    </div>
+                    <p>
+                        Demandes de cotation sur les produits locaux comme les haricots, poids de bambara venant des pays arabes, Inde et l’Iles Maurice.
+                    </p>
+                </div>
+
+                <!-- Fin Collecte et distribution -->
+
+                <!-- Tourisme -->
+                <div class="grid-item mobile" *ngIf="tagsTourisme">
+                    <p>
+                        Réalisations sur le Tourisme en cours
+                    </p>
+                </div>
+                <!-- Fin Tourisme -->
+
+                <!-- Hotellerie et restauration -->
+                <div class="grid-item mobile" *ngIf="tagsHotellerie">
+                    <p>
+                        Réalisations sur l'Hotellerie et la réstauration en cours
+                    </p>
+                </div>
+                <!-- Fin Hotellerie et restauration -->
+
+                <!-- BTP -->
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Construction d'infrastructures publiques</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(1).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(1).jpg" alt="infrastructures">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Construction routes</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(2).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(2).jpg" alt="routes">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Intérieur</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(3).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(3).jpg" alt="interieur">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Construction latrines</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(4).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(4).jpg" alt="latrines">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Construction d'infrastructures publiques</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(5).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(5).jpg" alt="infrastructures">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Extérieur</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(7).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(7).jpg" alt="Extérieur">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="grid-item mobile" *ngIf="tagsBTP">
+                    <h6>Intérieur</h6>
+                    <div class="portfolio projects">
+                        <a href="../assets/img/realisation/btp/Constructions(6).jpg" data-fancybox="portfolio">
+                            <img src="../assets/img/realisation/btp/Constructions(6).jpg" alt="Intérieur">
+                        </a>
+                    </div>
+                    <p>
+
+                    </p>
+                </div>
+
+                <!-- Fin BTP -->
+                <!-- Transport -->
+                <div class="grid-item mobile" *ngIf="tagsTransport">
+                    <p>
+                        Réalisations sur transport en cours
+                    </p>
+                </div>
+                <!-- Fin Transport -->
+
+            </div>
+            <!-- .grid -->
+
+            <!--
+                <div class="mt-5 text-center">
+                <button class="btn btn-primary">Voir Plus</button>
+            </div>
+            -->
+
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .page-section -->
+    <div class="page-section" style="padding-top: 0px !important;">
+        <div class="container-fluid">
+            <div class="row row-cols-md-3 row-cols-lg-8 justify-content-center text-center">
+                <div class="py-3 px-4">
+                    <img src="../../assets/img/triodi/triodi.png" alt="logoTriodi" style="width: 35%;">
+                </div>
+                <div class="py-3 px-4">
+                    <img src="../../assets/img/maka/maka.png" alt="logoMaka" style="width: 50%;">
+                </div>
+                <div class="py-3 px-4">
+                    <img src="../../assets/img/matura/matura.png" alt="logoMatura" style="width: 35%;">
+                </div>
+
+
+            </div>
+        </div>
+        <!-- .container-fluid -->
+    </div>
+</main>

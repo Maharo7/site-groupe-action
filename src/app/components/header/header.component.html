@@ -1,22 +1,25 @@
 <div class="back-to-top"></div>
 
+
+
+
 <header>
-    <div class="top-bar">
+    <div class="top-bar" style="background:#242424;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <div class="col-md-8">
                         <div class="d-inline-block">
-                            <span class="mai-mail fg-primary"></span> <a href="mailto:contact@mail.com">contact@mail.com</a>
+                            <span class="mai-mail fg-primary"></span> <a href="mailto:dir2groupeaction@gmail.com">dir2groupeaction@gmail.com</a>
                         </div>
                         <div class="d-inline-block ml-2">
-                            <span class="mai-call fg-primary"></span> <a href="tel:+0011223495">+261043434434</a>
+                            <span class="mai-call fg-primary"></span> <a href="tel:+261340722472">+261 34 07 224 72</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 text-right d-none d-md-block">
                     <div class="social-mini-button">
-                        <a href="#"><span class="mai-logo-facebook-f"></span></a>
+                        <a href="https://www.facebook.com/Groupe-Action-102300202397755" target="_blank"><span class="mai-logo-facebook-f"></span></a>
                         <a href="#"><span class="mai-logo-twitter"></span></a>
                         <a href="#"><span class="mai-logo-linkedin"></span></a>
                     </div>
@@ -28,10 +31,12 @@
     <!-- .top-bar -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky navbar-light" style="border-bottom: 1px solid #63728b; background: #242424;">
+        <!--    <nav class="navbar navbar-expand-lg sticky navbar-light" style="border-bottom: 0; background-color: white; background-attachment: fixed; ">-->
         <div class="container">
+            <!--<div class="container" style="padding: 10px 0px 10px 0px;">-->
 
-            <a (click)="goAccueil()" class="navbar-brand"> <img src="../../assets/img/LogoAction2.jpg" alt="logoAction" style="width: 60%;"></a>
+            <a (click)="goAccueil()" class="navbar-brand" style="margin: 0px; padding: 0px;"> <img src="../../assets/img/logoAction.jpg" alt="logoAction" style="width: 80%;"></a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,24 +45,24 @@
             <div class="navbar-collapse collapse" id="navbarContent">
                 <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
                     <li class="nav-item">
-                        <a (click)="goAccueil()" class="nav-link" [class.active]="isActiveAcceuil">ACCUEIL</a>
+                        <a (click)="goAccueil()" class="nav-link nav-menu" [class.active]="isActiveAcceuil">ACCUEIL</a>
 
                     </li>
                     <li class="nav-item">
-                        <a (click)="goTriodi()" class="nav-link" [class.active]="isActiveTriodi">TRIODI</a>
+                        <a (click)="goFiliales()" class="nav-link nav-menu" [class.active]="isActiveFiliales">NOS FILIALES</a>
                     </li>
                     <li class="nav-item">
 
-                        <a (click)="goMaka()" class="nav-link" [class.active]="isActiveMaka">MAKA</a>
+                        <a (click)="goRealisation()" class="nav-link nav-menu" [class.active]="isActiveRealisations">NOS REALISATIONS</a>
                     </li>
                     <li class="nav-item">
 
-                        <a (click)="goMatura()" class="nav-link" [class.active]="isActiveMatura">MATURA</a>
+                        <a (click)="goProjets()" class="nav-link nav-menu" [class.active]="IsActiveProjets">NOS PROJETS</a>
                     </li>
 
                     <li class="nav-item">
 
-                        <a (click)="goContact()" class="nav-link" [class.active]="isActiveContact">CONTACT</a>
+                        <a (click)="goContact()" class="nav-link nav-menu" [class.active]="isActiveContact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -65,4 +70,32 @@
         <!-- .container -->
     </nav>
     <!-- .navbar -->
+
+    <!--banner-->
+    <div class="page-banner home-banner" *ngIf="hasheader">
+        <div class="slider-wrapper">
+            <div class="owl-carousel hero-carousel">
+                <div class="hero-carousel-item">
+                    <img src="../../assets/img/camions.jpg" alt="image Triodi">
+                    <div class="img-caption">
+                        <img class="logo-accueil" src="../../assets/img/triodi/triodi.png" alt="logoTriodi" style="width: 40%;">
+                    </div>
+                </div>
+                <div class="hero-carousel-item">
+                    <img src="../../assets/img/engins.jpg" alt="image maka">
+                    <div class="img-caption">
+                        <img class="logo-accueil" src="../../assets/img/maka/maka.png" alt="logoMaka" style="width: 50%;">
+                    </div>
+                </div>
+                <div class="hero-carousel-item">
+                    <img src="../../assets/img/entrepots.jpg" alt="image matura">
+                    <div class="img-caption">
+                        <img class="logo-accueil" src="../../assets/img/matura/matura.png" alt="logoMatura" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .slider-wrapper -->
+    </div>
+    <!-- .page-banner -->
 </header>

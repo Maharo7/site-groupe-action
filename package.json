@@ -19,8 +19,11 @@
     "@angular/platform-browser": "~11.2.8",
     "@angular/platform-browser-dynamic": "~11.2.8",
     "@angular/router": "~11.2.8",
+    "classlist.js": "^1.1.20150312",
+    "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
@@ -28,6 +31,7 @@
     "@angular/cli": "~11.2.7",
     "@angular/compiler-cli": "~11.2.8",
     "@types/jasmine": "~3.6.0",
+    "@types/jquery": "^3.5.13",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",

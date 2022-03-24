@@ -27,7 +27,7 @@
                         "tsConfig": "tsconfig.app.json",
                         "aot": true,
                         "assets": [
-                            "src/favicon.ico",
+                            "src/favicon.png",
                             "src/assets"
                         ],
                         "styles": [
@@ -42,6 +42,9 @@
                             "src/assets/vendor/isotope/isotope.pkgd.min.js",
                             "src/assets/js/google-maps.js",
                             "src/assets/js/theme.js"
+                        ],
+                        "allowedCommonJsDependencies": [
+                            "lodash"
                         ]
                     },
                     "configurations": {
@@ -59,7 +62,7 @@
                             "buildOptimizer": true,
                             "budgets": [{
                                     "type": "initial",
-                                    "maximumWarning": "500kb",
+                                    "maximumWarning": "600kb",
                                     "maximumError": "1mb"
                                 },
                                 {
@@ -96,7 +99,7 @@
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "assets": [
-                            "src/favicon.ico",
+                            "src/favicon.png",
                             "src/assets"
                         ],
                         "styles": [

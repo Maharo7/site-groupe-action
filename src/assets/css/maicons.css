@@ -7,9 +7,11 @@
     font-display: block;
 }
 
-.englobe {
-    display: -webkit-box;
-    width: 200%;
+@media (min-width: 426px) {
+    .englobe {
+        display: -webkit-box;
+        width: 200%;
+    }
 }
 
 [class^="mai-"],
