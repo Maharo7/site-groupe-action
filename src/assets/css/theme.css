@@ -2823,7 +2823,7 @@ a.fg-light:focus {
     /* align-items: stretch; */
     justify-content: space-between;
     /* flex-direction: row; */
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .detail_logo_img {
@@ -2876,7 +2876,7 @@ a.fg-light:focus {
 }
 
 .bienvenue_text {
-    font-size: 50px;
+    font-size: 2.35rem;
 }
 
 @media (max-width: 1024px) {
@@ -2884,7 +2884,7 @@ a.fg-light:focus {
         font-size: 1.95rem;
     }
     .bienvenue_text {
-        font-size: 40px;
+        font-size: 2.15rem;
     }
     .title-section-accueil {
         font-size: 1.75rem;
@@ -2935,6 +2935,9 @@ a.fg-light:focus {
 @media (min-width: 768px) {
     .filiales-location {
         margin-top: 50px;
+    }
+    .accueil-last-element {
+        justify-content: center;
     }
 }
 

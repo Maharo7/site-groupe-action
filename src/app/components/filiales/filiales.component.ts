@@ -9,7 +9,11 @@ export class FilialesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+        ngOnInit(): void {
+
+
+
+          
   }
 
 }
